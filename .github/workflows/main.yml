@@ -1,0 +1,18 @@
+name: posting-by-issue
+
+on:
+  issues:
+    types:
+      - labeled
+
+jobs:
+  posting-release:
+    if: github.event.label.name == 'release'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Release post
+        uses: 0leaf/issue-to-md-posting@v0.1.1
+        with:
+          post_base_path: '_posts'
