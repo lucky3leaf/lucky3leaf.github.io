@@ -47,4 +47,5 @@ github issue 탭에 포스팅 하고자 하는 항목의 md 를 직접 구성하
 - 현재 버전은 issue를 삭제 해도 _post의 md 파일은 삭제되지 않으므로 삭제가 필요한 경우 직접 commit 반영하여 삭제 
 
 
+
 EOF
